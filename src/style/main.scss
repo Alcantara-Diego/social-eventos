@@ -1,0 +1,17 @@
+:root {
+    --azulPrincipal: #5858a9;
+    --brancoPrincipal: #f6f6f6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 200ms;
+}
+
+.principal{
+    position: relative;
+    // width: 100%;
+    height: 100vh;
+    
+}

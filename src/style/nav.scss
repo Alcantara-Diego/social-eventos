@@ -1,0 +1,27 @@
+nav{
+    height: 5vh;
+    padding: 10px;
+    border-bottom: 2px solid var(--azulPrincipal);
+    background-color: var(--brancoPrincipal);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+
+    .logo{
+        font-family: sans-serif;
+        font-weight: 700;
+        color: var(--azulPrincipal);
+        cursor: default;
+
+        
+    }
+    div{
+        color: var(--azulPrincipal);
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
