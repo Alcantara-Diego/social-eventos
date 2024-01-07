@@ -1,0 +1,89 @@
+:root{
+    --tamanhoCapa: 40%;
+    --espacoEntreConteudo: 4%;
+}
+
+main{
+    position: relative;
+    border: 5px solid purple;
+    padding: 15px;
+}
+
+.post{
+    position: relative;
+    display: block;
+    height: 54vw;
+    width: 33vw;
+    background-color: white;
+
+    .conteudo{
+        height: calc(100% - var(--tamanhoCapa) - var(--espacoEntreConteudo));
+        padding: 7px 6px 10px 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid gray;
+        border-top: none;
+    }
+    .capa{
+        height: var(--tamanhoCapa);
+        background-image: url(../assets/postsImg/show1.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    
+    .titulo{
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+
+    .subtitulo{
+        font-size: 1rem;
+        color: #898989;
+        
+    }
+
+    .descricao{
+        font-size: 1rem;
+    }
+
+    .interacao, .btnDiv{
+        display: flex;
+        flex-direction: column;
+
+        .confirmadosNumero{
+            color: #898989;
+            font-weight: bold;
+            letter-spacing: .05px;
+        }
+        
+        button{
+            padding: 5px 0px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .confirmarPresencaBtn{
+            background-color: #4379E2;
+            color: white;
+            &:hover{
+                background-color: #3058a8;
+            }
+
+        }
+
+        .comentariosBtn{
+            margin-top: 3px;
+            border-color: #4379E2;
+            color: #4379E2;
+            background-color: white;
+            &:hover{
+                background-color: #4378e22b;
+            }
+        }
+    }
+
+
+}

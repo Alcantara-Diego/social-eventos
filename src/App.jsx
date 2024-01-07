@@ -1,14 +1,18 @@
 // import { useState } from 'react'
 import Nav from "./Nav"
 import Sidebar from "./Sidebar"
-
+import Feed from "./Feed"
 function App() {
   
 
   return (
-    <div className="principal">
+    <div className="container">
       <Nav></Nav>
-      <Sidebar></Sidebar>
+
+      <div className="content">
+        <Sidebar></Sidebar>
+        <Feed></Feed>
+      </div>
     </div>
   )
 }
