@@ -8,13 +8,19 @@ main{
     border: 5px solid purple;
     padding: 15px;
 }
-
+.postsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .post{
     position: relative;
     display: block;
-    height: 54vw;
+    height: 58vw;
     width: 33vw;
     background-color: white;
+    border: 2px solid gray;
+    overflow: hidden;
 
     .conteudo{
         height: calc(100% - var(--tamanhoCapa) - var(--espacoEntreConteudo));
@@ -22,17 +28,19 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 2px solid gray;
+        // border: 2px solid gray;
         border-top: none;
     }
     .capa{
-        height: var(--tamanhoCapa);
-        background-image: url(../assets/postsImg/show1.jpg);
-        background-position: center;
-        background-size: cover;
+        
+        width: 100%;
+        height: 40%;
         
     }
 
+    header{
+        overflow: auto;
+    }
     
     .titulo{
         font-size: 1.7rem;
@@ -47,6 +55,21 @@ main{
 
     .descricao{
         font-size: 1rem;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .extra-info{
+
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        color: gray;
+        font-weight: bold;
+
+        a{
+            text-decoration: none;
+        }
     }
 
     .interacao, .btnDiv{
