@@ -2,7 +2,7 @@ import './style/feed.scss'
 import { FaCalendar, FaLink} from 'react-icons/fa';
 import { IoIosWarning } from "react-icons/io";
 import { IoGameController } from "react-icons/io5";
-import { IoIosPeople } from "react-icons/io";
+import { FaUsers } from "react-icons/fa6";
 
 
 
@@ -37,7 +37,7 @@ function feed(){
 
                         
                         <div className="interacao">
-                            <p className="confirmadosNumero"> <IoIosPeople />
+                            <p className="interessadosNumero"> <FaUsers />
                             15 pessoas interessadas</p>
                             <div className="btnDiv">
                                 <button className="confirmarPresencaBtn">Tenho interesse!</button>
@@ -79,7 +79,7 @@ function feed(){
                         
 
                         <div className="interacao">
-                            <p className="confirmadosNumero"><IoIosPeople />
+                            <p className="interessadosNumero"><FaUsers /> 
                             15 pessoas interessadas</p>
                             <div className="btnDiv">
                                 <button className="confirmarPresencaBtn">Tenho interesse!</button>
