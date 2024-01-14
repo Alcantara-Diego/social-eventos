@@ -12,6 +12,7 @@ nav{
     z-index: 100;
 
     .logo{
+        font-size: 1.1rem;
         font-family: sans-serif;
         font-weight: 700;
         color: var(--azulPrincipal);
@@ -23,5 +24,11 @@ nav{
         color: var(--azulPrincipal);
         cursor: pointer;
         font-weight: 600;
+    }
+}
+
+@media (max-width: 550px){
+    .logo{
+        font-size: 1rem!important;
     }
 }
