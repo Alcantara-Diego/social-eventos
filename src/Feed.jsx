@@ -7,16 +7,21 @@ import { FaMicrophoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 
 
+import show1Foto from './assets/postsImg/show1.jpg'
+import gta6Foto from './assets/postsImg/gta6.webp'
+import travisFoto from './assets/postsImg/travisAlbum.avif'
+import youtubeChallengeFoto from './assets/postsImg/youtubeChallenge.jpg'
 
 function feed(){
     return(
         <main>
+            
             <div className="postsContainer">
 
 
                 <div className="post">
                     
-                    <img src=".\src\assets\postsImg\show1.jpg" alt="" className='capa'/>
+                    <img src={show1Foto} alt="" className='capa'/>
                     <div className="conteudo">
                         <header>
                             <h3 className="titulo">Cena 2k</h3>
@@ -54,7 +59,7 @@ function feed(){
 
                 <div className="post">
                     
-                    <img src=".\src\assets\postsImg\gta6.webp" alt="" className='capa'/>
+                    <img src={gta6Foto} alt="" className='capa'/>
                     <div className="conteudo">
                         <header>
                             <h3 className="titulo">GTA VI</h3>
@@ -95,7 +100,7 @@ function feed(){
 
                 <div className="post">
                     
-                    <img src=".\src\assets\postsImg\travisAlbum.avif" alt="" className='capa'/>
+                    <img src={travisFoto} alt="" className='capa'/>
                     <div className="conteudo">
                         <header>
                             <h3 className="titulo">Utopia</h3>
@@ -132,7 +137,7 @@ function feed(){
 
                 <div className="post">
                     
-                    <img src=".\src\assets\postsImg\youtubeChallenge.jpg" alt="" className='capa'/>
+                    <img src={youtubeChallengeFoto} alt="" className='capa'/>
                     <div className="conteudo">
                         <header>
                             <h3 className="titulo">O grande reset</h3>

@@ -1,6 +1,10 @@
 :root {
-    --azulPrincipal: #5858a9;
-    --brancoPrincipal: #f6f6f6;
+    --corPrimaria: #fdfdfd;
+    --corSecundaria: #ffffff;
+    --corTema: #1155DB;
+    --corTema2: black;
+    --corOutline: black;
+    
 }
 
 *{
@@ -9,8 +13,9 @@
 }
 
 body{
-    background-image: url(../assets/bg1.jpg);
-    background-size: cover;
+    // background-image: url(../assets/bg1.jpg);
+    // background-size: cover;
+    // background-color: #1155DB;
     font-family: sans-serif;
     overflow: hidden;
 }
@@ -19,8 +24,8 @@ body{
     margin: auto;
     position: relative;
     height: 100vh;
-    max-width: 900px;
-    border: 2px solid var(--azulPrincipal);
+    max-width: 1300px;
+    border: 2px solid var(--corOutline);
     
 }
 
@@ -28,6 +33,7 @@ body{
     display: grid;
     grid-template-columns: 18% 82%;
 }
+
 
 
 

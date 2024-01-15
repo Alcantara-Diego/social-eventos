@@ -6,6 +6,7 @@ import { FaMusic } from "react-icons/fa";
 
 import { IoIosAddCircle } from "react-icons/io";
 import { AiFillProject } from "react-icons/ai";
+import { BsPersonCircle } from "react-icons/bs";
 
 
 
@@ -15,13 +16,16 @@ function Sidebar () {
             
             <div className="sidebarDesktop">
                 <div className="sidebarGrupo">
+                    <p>Categorias</p>
                     <li>Trending <ImFire /></li>
                     <li>Jogos <IoGameController/></li>
                     <li>Música <FaMusic /></li>
                 </div>
                 <div className="sidebarGrupo">
+                    <p>Pessoal</p>
                     <li>Criar evento <IoIosAddCircle /></li>
                     <li>Meus eventos <AiFillProject /></li>
+                    <li>Perfil <BsPersonCircle /></li>
                 
                 </div>
             </div>
@@ -40,7 +44,7 @@ function Sidebar () {
                     <FaMusic />
                 </li>
                 <li>
-                    <IoGameController/>
+                    <BsPersonCircle />
                 </li>
                 
             </ul>
