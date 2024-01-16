@@ -8,6 +8,42 @@ import { IoIosAddCircle } from "react-icons/io";
 import { AiFillProject } from "react-icons/ai";
 import { BsPersonCircle } from "react-icons/bs";
 
+function resetTelaPrincipal(){
+    console.log("entrou reset")
+    const telaFeed = document.getElementById("telaFeed");
+    const telaUsuarioInfo = document.getElementById("telaUsuarioInfo");
+
+    telaUsuarioInfo.style.display="none";
+    telaFeed.style.display="block";
+}
+
+function toggleTelaPrincipal(trigger){
+    console.log(trigger)
+
+    let telaFeed = document.getElementById("telaFeed");
+    let telaUsuarioInfo = document.getElementById("telaUsuarioInfo");
+
+    console.log(getComputedStyle(telaUsuarioInfo).display === "none")
+
+    switch (trigger) {
+        case "usuario":
+            if(getComputedStyle(telaUsuarioInfo).display === "none"){
+                telaUsuarioInfo.style.display = "block";
+                telaFeed.style.display = "none";
+            } else {
+                resetTelaPrincipal();
+            }
+           
+
+            
+            break;
+    
+        default:
+            break;
+    }
+
+    
+}
 
 
 function Sidebar () {
@@ -25,7 +61,7 @@ function Sidebar () {
                     <p>Pessoal</p>
                     <li>Criar evento <IoIosAddCircle /></li>
                     <li>Meus eventos <AiFillProject /></li>
-                    <li>Perfil <BsPersonCircle /></li>
+                    <li onClick={()=> toggleTelaPrincipal("usuario")}>Perfil <BsPersonCircle /></li>
                 
                 </div>
             </div>
@@ -43,7 +79,7 @@ function Sidebar () {
                 <li>
                     <FaMusic />
                 </li>
-                <li>
+                <li onClick={()=> toggleTelaPrincipal("usuario")}>
                     <BsPersonCircle />
                 </li>
                 

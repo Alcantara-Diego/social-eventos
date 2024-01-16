@@ -14,7 +14,7 @@ import youtubeChallengeFoto from './assets/postsImg/youtubeChallenge.jpg'
 
 function feed(){
     return(
-        <main>
+        <main id='telaFeed'>
             
             <div className="postsContainer">
 

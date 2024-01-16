@@ -2,6 +2,7 @@
 import Nav from "./Nav"
 import Sidebar from "./Sidebar"
 import Feed from "./Feed"
+import UsuarioInfo from "./UsuarioInfo"
 function App() {
   
 
@@ -11,7 +12,10 @@ function App() {
 
       <div className="content">
         <Sidebar></Sidebar>
-        <Feed></Feed>
+        <div className="telaPrincipal">
+          <Feed></Feed>
+          <UsuarioInfo></UsuarioInfo>
+        </div>
       </div>
     </div>
   )

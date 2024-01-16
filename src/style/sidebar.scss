@@ -65,10 +65,10 @@
 
 @media (max-width: 700px){
     .sidebar{
-        padding: 10px 0px;
+        padding: 7px 0px;
 
         position: absolute;
-        bottom: 1vh;
+        bottom: 0;
         left: 0;
         right: 0;
 
@@ -77,7 +77,8 @@
         flex-direction: row;
         justify-content: center;
 
-        border-left: 2px solid var(--corOutline);
+        border-top: 1px solid var(--corOutline);
+        border-right: none;
         z-index: 10;
 
         .sidebarGrupo{
@@ -94,13 +95,15 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            border-top: 2px solid var(--corOutline);
             padding-top: 6px;
 
             width: 100vw;
-           
+            height: fill-available;
+
             font-size: 1.3rem;
             z-index: 101;
+
+            
 
             
             li{
@@ -109,6 +112,8 @@
                 }
 
             }
+
+            
             
         }
         .sidebarDesktop{
