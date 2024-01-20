@@ -3,6 +3,7 @@ import Nav from "./Nav"
 import Sidebar from "./Sidebar"
 import Feed from "./Feed"
 import UsuarioInfo from "./UsuarioInfo"
+
 function App() {
   
 

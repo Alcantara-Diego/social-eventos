@@ -1,6 +1,7 @@
 import './style/sidebar.scss'
 
-import { ImFire } from "react-icons/im";
+import { FaSearch } from "react-icons/fa";
+import { IoHomeSharp } from "react-icons/io5";
 import { IoGameController } from "react-icons/io5";
 import { FaMusic } from "react-icons/fa";
 
@@ -53,7 +54,7 @@ function Sidebar () {
             <div className="sidebarDesktop">
                 <div className="sidebarGrupo">
                     <p>Categorias</p>
-                    <li>Trending <ImFire /></li>
+                    <li onClick={resetTelaPrincipal}>Home <IoHomeSharp /></li>
                     <li>Jogos <IoGameController/></li>
                     <li>Música <FaMusic /></li>
                 </div>
@@ -67,17 +68,18 @@ function Sidebar () {
             </div>
 
             <ul className="sidebarMobile">
-                <li>
-                    <ImFire />
+                <li onClick={resetTelaPrincipal}>
+                <IoHomeSharp />
+
                 </li>
                 <li>
-                    <AiFillProject />
+                    <FaSearch />
                 </li>
                 <li>
                     <IoIosAddCircle />
                 </li>
                 <li>
-                    <FaMusic />
+                    <AiFillProject />
                 </li>
                 <li onClick={()=> toggleTelaPrincipal("usuario")}>
                     <BsPersonCircle />

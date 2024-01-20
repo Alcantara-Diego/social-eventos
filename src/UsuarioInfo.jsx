@@ -10,11 +10,13 @@ function UsuarioInfo(){
 
             <div className="dados">
                 <p>Seguidores: <strong>5</strong></p>
-                <p>Seguindo: <strong>5</strong></p>
+                <p className="divisao">Seguindo: <strong>5</strong></p>
                 
                 <p>Eventos interessados: <strong>5</strong></p>
 
-                <p>Eventos criados: <strong>5</strong></p>
+                <p className="divisao">Eventos criados: <strong>5</strong></p>
+
+                <p >Conta criada em: <strong>20/01/2023</strong></p>
             </div>
         </div>
     )

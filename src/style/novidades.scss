@@ -1,0 +1,93 @@
+
+
+#novidadesDiv{
+    position: relative;
+    background-color: white;
+    border: 2px solid var(--corTema);
+    border-radius: 15px;
+    height: 18vh;
+    padding: 5px;
+    margin-bottom: 7px;
+
+    .novidadeSimbolo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        color: #4379E2;
+        border: 2px solid var(--corTema);
+        border-radius: 50%;
+        padding: 3px;
+        font-size: 1.3rem;
+
+    }
+
+    .listas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    h4{
+        margin-bottom: 10px;
+        color: var(--corTema);
+    }
+
+    ul{
+        font-weight: bold;
+        list-style: none;
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 7px;
+
+           
+            }
+            *{
+                font-size: 1.1rem;
+                display: inline-block;
+            }
+            button{
+                padding: 2px 9px;
+                padding-bottom: 0;
+                font-size: .9rem;
+                font-weight: bold;
+                color: white;
+                border-radius: 15px;
+                background-color: #4379E2;
+                text-align: center;
+                cursor: pointer;
+                
+
+            p{
+                
+                margin-left: 8px;
+                cursor: pointer;
+                
+            }
+            
+        }
+    }
+}
+
+
+@media (max-width: 550px){
+    #novidadesDiv{
+        margin-top: 6px;
+        border-radius: 4px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 0;
+
+        .novidadeSimbolo{
+            top:3px;
+            left: 3px;
+            padding: 0;
+            border: none;
+        }
+    }
+
+}

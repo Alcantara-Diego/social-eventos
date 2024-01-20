@@ -1,4 +1,5 @@
 import './style/feed.scss'
+import Novidades from './Novidades';
 import { FaCalendar, FaLink} from 'react-icons/fa';
 import { IoIosWarning } from "react-icons/io";
 import { IoGameController } from "react-icons/io5";
@@ -16,6 +17,7 @@ function feed(){
     return(
         <main id='telaFeed'>
             
+            <Novidades></Novidades>
             <div className="postsContainer">
 
 
